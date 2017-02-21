@@ -62,11 +62,11 @@ public class Activity2 extends AppCompatActivity {
                     int v=Integer.parseInt(valor.getText().toString());
 
                     if(rbArea.isChecked() && rbCuadrado.isChecked()) {
-                        resultado = v * 2;
+                        resultado = v * v;
                         respuesta="Cuadrado - Area\n";
                     }
                     else if (rbArea.isChecked() && rbCirculo.isChecked()) {
-                        resultado = (float) (v * 3.14);
+                        resultado = (float) (v * v * 3.14);
                         respuesta="Circulo - Area\n";
                     }
                     else if (rbPerimetro.isChecked() && rbCuadrado.isChecked()) {
