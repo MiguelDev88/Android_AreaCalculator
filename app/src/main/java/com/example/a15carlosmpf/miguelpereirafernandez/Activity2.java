@@ -33,7 +33,6 @@ public class Activity2 extends AppCompatActivity {
 
         intent=getIntent();
 
-
         btnSeguir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,9 +82,7 @@ public class Activity2 extends AppCompatActivity {
                     setResult(RESULT_OK, intent);
                     finish();
 
-
                 }else
-
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.mensaje), Toast.LENGTH_LONG).show();
             }
         });
