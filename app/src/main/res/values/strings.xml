@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MiguelPereiraFernandez</string>
+
+    <string name="Bienvenido">Welcome</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_1">Figures</string>
+    <string name="title_activity_2">Calculando...</string>
+    <string name="btn1">Begin</string>
+    <string name="btn2">End</string>
+    <string name="mensaje">You must insert a value</string>
+    <string name="hello_world">Hello world!</string>
+</resources>
