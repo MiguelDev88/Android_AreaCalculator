@@ -14,7 +14,7 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
 
     private static final int CODIGO=11;
-    private Button btnEmpezar,btnFin;
+    private Button btnEmpezar;
     private Intent intent;
     private TextView tvCentro;
 
@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnEmpezar=(Button)findViewById(R.id.btnEmpezar);
-        btnFin=(Button)findViewById(R.id.btnFin);
         tvCentro=(TextView)findViewById(R.id.tvCentro);
 
 
@@ -34,9 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 intent=new Intent(getApplicationContext(), Activity2.class);
-
                 startActivityForResult(intent,CODIGO);
-
 
             }
         });
@@ -49,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         String respuesta;
         float resultado;
+
 
         if(requestCode==CODIGO)
             if(resultCode==RESULT_OK)
